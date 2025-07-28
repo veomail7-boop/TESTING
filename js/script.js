@@ -1,4 +1,4 @@
-// Custom JavaScript for Interactive Website Features
+// Enhanced JavaScript for Interactive Website Features
 
 // Page Loading Animation
 document.addEventListener('DOMContentLoaded', function() {
@@ -14,18 +14,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     const ctaButtons = document.querySelectorAll('.cta-btn');
     
-    // Scroll Effect for Navbar
+    // Enhanced Scroll Effect for Navbar
     function handleNavbarScroll() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 50) {
             navbar.classList.add('scrolled');
+            // Add parallax effect to hero elements
+            const heroElements = document.querySelectorAll('#hero .stat-card, #hero .hero-image-placeholder');
+            heroElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrollTop * speed}px)`;
+            });
         } else {
             navbar.classList.remove('scrolled');
+            // Reset parallax effect
+            const heroElements = document.querySelectorAll('#hero .stat-card, #hero .hero-image-placeholder');
+            heroElements.forEach(element => {
+                element.style.transform = 'translateY(0px)';
+            });
         }
     }
     
-    // Mobile Menu Toggle
+    // Enhanced Mobile Menu Toggle
     function toggleMobileMenu() {
         const isHidden = mobileMenu.classList.contains('hidden');
         
@@ -36,6 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 10);
             mobileMenuBtn.classList.add('active');
             mobileMenuBtn.innerHTML = '<i class="fas fa-times text-xl"></i>';
+            
+            // Add stagger animation to mobile menu items
+            const menuItems = mobileMenu.querySelectorAll('.mobile-nav-link');
+            menuItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-20px)';
+                setTimeout(() => {
+                    item.style.transition = 'all 0.3s ease';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                }, index * 100);
+            });
         } else {
             mobileMenu.classList.remove('show');
             setTimeout(() => {
@@ -198,6 +221,54 @@ document.addEventListener('DOMContentLoaded', function() {
     
 console.log('Navigation bar initialized successfully!');
     
+    // Enhanced Service Card Interactions
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // Add floating animation
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+            this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.25)';
+            
+            // Animate icon
+            const icon = this.querySelector('i');
+            if (icon) {
+                icon.style.transform = 'scale(1.2) rotate(5deg)';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            // Reset animations
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '';
+            
+            // Reset icon
+            const icon = this.querySelector('i');
+            if (icon) {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            }
+        });
+    });
+    
+    // Enhanced Stat Counter Animation
+    const statCards = document.querySelectorAll('.stat-card');
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const statNumber = entry.target.querySelector('div:first-child');
+                if (statNumber) {
+                    animateNumber(statNumber, parseInt(statNumber.textContent.replace(/\D/g, '')), 2000);
+                }
+            }
+        });
+    }, observerOptions);
+    
+    statCards.forEach(card => statObserver.observe(card));
+    
     // Initialize all interactive features
     initTestimonialCarousel();
     initFormValidation();
@@ -210,7 +281,7 @@ console.log('Navigation bar initialized successfully!');
 
 // Features Section Functionality
 function initFeaturesAnimations() {
-    // Statistics Counter Animation
+    // Enhanced Statistics Counter Animation
     function animateCounter(element, target, duration) {
         let start = 0;
         const increment = target / (duration / 16); // 60fps
@@ -226,6 +297,31 @@ function initFeaturesAnimations() {
         }
         
         updateCounter();
+    }
+    
+    // Enhanced Number Animation with Easing
+    function animateNumber(element, target, duration) {
+        const start = 0;
+        const startTime = performance.now();
+        
+        function updateNumber(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = Math.floor(start + (target - start) * easeOutQuart);
+            
+            element.textContent = current;
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateNumber);
+            } else {
+                element.textContent = target;
+            }
+        }
+        
+        requestAnimationFrame(updateNumber);
     }
     
     // Progress Bar Animation

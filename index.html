@@ -25,59 +25,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Sticky Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+    <!-- Enhanced Sticky Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-400 ease-in-out">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
+            <div class="flex items-center justify-between h-20">
+                <!-- Enhanced Logo -->
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <div class="text-2xl font-bold text-white" id="logo">
-                            <i class="fas fa-rocket mr-2"></i>
-                            <span>YourLogo</span>
+                        <div class="text-3xl font-bold text-white hover:text-blue-300 transition-all duration-300" id="logo">
+                            <i class="fas fa-rocket mr-3 text-blue-400"></i>
+                            <span class="text-gradient">DigitalPro</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Desktop Navigation -->
+                <!-- Enhanced Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
-                        <a href="#features" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Features</a>
-                        <a href="#services" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
-                        <a href="#pricing" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Pricing</a>
-                        <a href="#team" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Team</a>
-                        <a href="#contact" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                        <a href="#home" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Home</a>
+                        <a href="#features" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Features</a>
+                        <a href="#services" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Services</a>
+                        <a href="#pricing" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Pricing</a>
+                        <a href="#team" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Team</a>
+                        <a href="#contact" class="nav-link text-white hover:text-blue-300 px-4 py-3 text-sm font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Contact</a>
                     </div>
                 </div>
 
-                <!-- CTA Button -->
+                <!-- Enhanced CTA Button -->
                 <div class="hidden md:block">
-                    <a href="#get-started" class="cta-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 transform hover:scale-105">
+                    <a href="#get-started" class="cta-btn bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-rocket mr-2"></i>
                         Get Started
                     </a>
                 </div>
 
-                <!-- Mobile menu button -->
+                <!-- Enhanced Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-white hover:text-blue-300 focus:outline-none focus:text-blue-300 transition-colors duration-200">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-300 focus:outline-none focus:text-blue-300 transition-all duration-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-95 backdrop-blur-sm">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Home</a>
-                <a href="#features" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Features</a>
-                <a href="#services" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Services</a>
-                <a href="#pricing" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Pricing</a>
-                <a href="#team" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Team</a>
-                <a href="#contact" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Contact</a>
-                <div class="px-3 py-2">
-                    <a href="#get-started" class="cta-btn block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200">
+        <!-- Enhanced Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-95 backdrop-blur-sm border-t border-white border-opacity-20">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#home" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Home</a>
+                <a href="#features" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Features</a>
+                <a href="#services" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Services</a>
+                <a href="#pricing" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Pricing</a>
+                <a href="#team" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Team</a>
+                <a href="#contact" class="mobile-nav-link block text-white hover:text-blue-300 px-4 py-3 text-base font-semibold transition-all duration-300 rounded-lg hover:bg-white hover:bg-opacity-10">Contact</a>
+                <div class="px-4 py-3">
+                    <a href="#get-started" class="cta-btn block w-full text-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg">
+                        <i class="fas fa-rocket mr-2"></i>
                         Get Started
                     </a>
                 </div>
@@ -85,35 +87,82 @@
         </div>
     </nav>
 
-<!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center">
+<!-- Enhanced Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Enhanced Background with Animated Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+            <!-- Animated Background Elements -->
+            <div class="absolute top-20 left-20 w-72 h-72 bg-white bg-opacity-10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500 bg-opacity-10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500 bg-opacity-10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
         <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
             <div class="text-center text-white py-20">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6" data-aos="fade-up" data-aos-duration="1000">
-                    Boost Your Online Presence with Expert Digital Marketing
+                <!-- Enhanced Main Heading -->
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+                        Transform Your
+                    </span>
+                    <br>
+                    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Digital Presence
+                    </span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    Harness the power of SEO and backlink strategies to elevate your brand visibility and drive sustainable growth.
+                
+                <!-- Enhanced Subtitle -->
+                <p class="text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <span class="text-blue-200">Harness the power of</span> 
+                    <span class="text-white font-semibold">AI-driven SEO</span> 
+                    <span class="text-blue-200">and</span> 
+                    <span class="text-white font-semibold">strategic backlinks</span> 
+                    <span class="text-blue-200">to skyrocket your brand visibility and drive</span> 
+                    <span class="text-green-300 font-semibold">sustainable growth</span>
                 </p>
                 
-                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <a href="#get-started" class="hero-cta-primary cta-btn text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                        <i class="fas fa-rocket mr-2"></i>
-                        Start Your Growth
+                <!-- Enhanced CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <a href="#get-started" class="hero-cta-primary cta-btn text-white px-10 py-5 rounded-full text-xl font-bold transition-all duration-500 transform hover:scale-110 shadow-2xl hover:shadow-3xl">
+                        <i class="fas fa-rocket mr-3 text-2xl"></i>
+                        Start Your Growth Journey
                     </a>
-                    <a href="#services" class="hero-cta-secondary cta-btn text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
-                        <i class="fas fa-eye mr-2"></i>
-                        View Services
+                    <a href="#services" class="hero-cta-secondary cta-btn text-white px-10 py-5 rounded-full text-xl font-semibold transition-all duration-500 backdrop-blur-sm border-2 border-white border-opacity-30 hover:bg-white hover:bg-opacity-20">
+                        <i class="fas fa-eye mr-3 text-2xl"></i>
+                        Explore Our Services
                     </a>
                 </div>
 
-                <!-- Hero Image Placeholder -->
-                <div class="mt-16" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1200">
-                    <div class="hero-image-placeholder w-full h-64 md:h-96 rounded-2xl flex items-center justify-center shadow-2xl">
+                <!-- Enhanced Stats Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="stat-card bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                        <div class="text-4xl font-bold text-white mb-2">500+</div>
+                        <div class="text-blue-200 font-semibold">Happy Clients</div>
+                    </div>
+                    <div class="stat-card bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                        <div class="text-4xl font-bold text-white mb-2">300%</div>
+                        <div class="text-blue-200 font-semibold">Average Growth</div>
+                    </div>
+                    <div class="stat-card bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 border border-white border-opacity-20">
+                        <div class="text-4xl font-bold text-white mb-2">24/7</div>
+                        <div class="text-blue-200 font-semibold">Expert Support</div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Hero Image Placeholder -->
+                <div class="mt-20" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1200">
+                    <div class="hero-image-placeholder w-full h-80 md:h-96 rounded-3xl flex items-center justify-center shadow-2xl border border-white border-opacity-20 backdrop-blur-sm">
                         <div class="text-center">
-                            <i class="fas fa-chart-line text-6xl mb-4 opacity-70"></i>
-                            <p class="text-2xl font-semibold opacity-80">Digital Marketing Visualization</p>
-                            <p class="text-lg opacity-60 mt-2">Interactive dashboard placeholder</p>
+                            <div class="mb-6">
+                                <i class="fas fa-chart-line text-8xl mb-4 opacity-80 text-blue-300"></i>
+                            </div>
+                            <p class="text-3xl font-bold opacity-90 text-white mb-4">AI-Powered Analytics Dashboard</p>
+                            <p class="text-xl opacity-70 text-blue-200">Real-time insights and performance tracking</p>
+                            <div class="mt-6 flex justify-center space-x-4">
+                                <div class="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                                <div class="w-3 h-3 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+                                <div class="w-3 h-3 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,86 +371,166 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+    <!-- Enhanced Services Section -->
+    <section id="services" class="py-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+        <!-- Background Decorative Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-100/30 via-purple-100/30 to-pink-100/30"></div>
+        <div class="absolute top-20 right-20 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-20"></div>
+        <div class="absolute bottom-20 left-20 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Enhanced Section Header -->
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent">
+                    Our Premium Services
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Comprehensive digital marketing solutions designed to <span class="font-semibold text-blue-600">accelerate your growth</span> and <span class="font-semibold text-purple-600">maximize your ROI</span>
+                </p>
+            </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
-                <!-- SEO Optimization Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-search text-4xl"></i>
+                <!-- Enhanced SEO Optimization Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-search text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">SEO Optimization</h3>
-                    <p class="text-gray-600 mb-4">Comprehensive keyword research, on-page optimization, and technical SEO to boost your search rankings.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">AI-Powered SEO</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Advanced keyword research, technical optimization, and AI-driven insights to dominate search rankings.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-blue-600">$299/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
                     </a>
                 </div>
 
-                <!-- Backlink Building Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-link text-4xl"></i>
+                <!-- Enhanced Backlink Building Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-link text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Backlink Building</h3>
-                    <p class="text-gray-600 mb-4">High-quality link acquisition, competitor analysis, and white-hat techniques for lasting results.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-purple-600 transition-colors duration-300">Premium Backlinks</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">High-authority link building with white-hat techniques and competitor analysis for lasting authority.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-purple-600">$499/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
                     </a>
                 </div>
 
-                <!-- Digital Marketing Strategy Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-bullseye text-4xl"></i>
+                <!-- Enhanced Digital Marketing Strategy Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-bullseye text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Digital Marketing Strategy</h3>
-                    <p class="text-gray-600 mb-4">Custom marketing plans with ROI focus and data-driven approach for optimal performance.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-green-600 transition-colors duration-300">Strategic Marketing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Data-driven marketing strategies with ROI focus and comprehensive performance tracking.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-green-600">$799/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
                     </a>
                 </div>
 
-                <!-- Content Marketing Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-edit text-4xl"></i>
+                <!-- Enhanced Content Marketing Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-edit text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Content Marketing</h3>
-                    <p class="text-gray-600 mb-4">Professional blog writing, content strategy development, and SEO-optimized content creation.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-orange-600 transition-colors duration-300">Content Creation</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Professional content strategy with SEO-optimized writing and engaging multimedia creation.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-orange-600">$399/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-orange-600 hover:text-orange-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
                     </a>
                 </div>
 
-                <!-- Social Media Management Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-share-alt text-4xl"></i>
+                <!-- Enhanced Social Media Management Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-share-alt text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Social Media Management</h3>
-                    <p class="text-gray-600 mb-4">Complete platform management, engaging content creation, and community engagement strategies.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-pink-600 transition-colors duration-300">Social Media</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Complete platform management with engaging content and community growth strategies.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-pink-600">$299/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-pink-600 hover:text-pink-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
                     </a>
                 </div>
 
-                <!-- PPC Advertising Card -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
-                    <div class="text-blue-600 mb-4">
-                        <i class="fas fa-ad text-4xl"></i>
+                <!-- Enhanced PPC Advertising Card -->
+                <div class="service-card bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 text-center transition-all duration-500 hover:transform hover:-translate-y-4 hover:shadow-2xl group">
+                    <div class="relative mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-ad text-3xl text-white"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">PPC Advertising</h3>
-                    <p class="text-gray-600 mb-4">Expert Google Ads and Facebook Ads management with campaign optimization for maximum ROI.</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
-                        Learn More
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900 group-hover:text-red-600 transition-colors duration-300">PPC Campaigns</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Expert Google Ads and Facebook Ads management with advanced optimization for maximum ROI.</p>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-sm text-gray-500">Starting from</span>
+                        <span class="text-2xl font-bold text-red-600">$599/mo</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold transition-all duration-300 group-hover:translate-x-2">
+                        Explore Details
+                        <i class="fas fa-arrow-right ml-2 group-hover:ml-4 transition-all duration-300"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Enhanced CTA Section -->
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Ready to Transform Your Business?</h3>
+                    <p class="text-xl text-blue-100 mb-8">Get a free consultation and custom strategy tailored to your goals</p>
+                    <a href="#contact" class="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                        <i class="fas fa-rocket mr-3"></i>
+                        Get Free Consultation
                     </a>
                 </div>
             </div>

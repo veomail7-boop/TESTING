@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Digital Marketing Expert - Boost Your Online Presence</title>
+    <meta name="description" content="Professional digital marketing services specializing in SEO and backlink strategies to elevate your brand visibility and drive sustainable growth.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="text-2xl font-bold text-white" id="logo">
+                            <i class="fas fa-rocket mr-2"></i>
+                            <span>YourLogo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
+                        <a href="#features" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Features</a>
+                        <a href="#services" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
+                        <a href="#pricing" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Pricing</a>
+                        <a href="#team" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Team</a>
+                        <a href="#contact" class="nav-link text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#get-started" class="cta-btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 transform hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-300 focus:outline-none focus:text-blue-300 transition-colors duration-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black bg-opacity-95 backdrop-blur-sm">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Home</a>
+                <a href="#features" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Features</a>
+                <a href="#services" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Services</a>
+                <a href="#pricing" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Pricing</a>
+                <a href="#team" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Team</a>
+                <a href="#contact" class="mobile-nav-link block text-white hover:text-blue-300 px-3 py-2 text-base font-medium transition-colors duration-200">Contact</a>
+                <div class="px-3 py-2">
+                    <a href="#get-started" class="cta-btn block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-200">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
+            <div class="text-center text-white py-20">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6" data-aos="fade-up" data-aos-duration="1000">
+                    Boost Your Online Presence with Expert Digital Marketing
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Harness the power of SEO and backlink strategies to elevate your brand visibility and drive sustainable growth.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <a href="#get-started" class="hero-cta-primary cta-btn text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Start Your Growth
+                    </a>
+                    <a href="#services" class="hero-cta-secondary cta-btn text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-eye mr-2"></i>
+                        View Services
+                    </a>
+                </div>
+
+                <!-- Hero Image Placeholder -->
+                <div class="mt-16" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1200">
+                    <div class="hero-image-placeholder w-full h-64 md:h-96 rounded-2xl flex items-center justify-center shadow-2xl">
+                        <div class="text-center">
+                            <i class="fas fa-chart-line text-6xl mb-4 opacity-70"></i>
+                            <p class="text-2xl font-semibold opacity-80">Digital Marketing Visualization</p>
+                            <p class="text-lg opacity-60 mt-2">Interactive dashboard placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="home" class="pt-16">
+        <h1 class="text-4xl font-bold text-center mt-10" data-aos="fade-up">
+            Welcome to Your Website
+        </h1>
+        <p class="text-center mt-4 text-gray-600" data-aos="fade-up" data-aos-delay="200">
+            This is your HTML5 boilerplate with Tailwind CSS, Font Awesome, and AOS animations.
+        </p>
+        
+        <!-- Example Font Awesome icon -->
+        <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-rocket text-6xl text-blue-500"></i>
+        </div>
+    </main>
+
+    <!-- Features and Benefits Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Why Choose Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Discover what sets us apart and makes us the trusted choice for digital marketing excellence
+                </p>
+            </div>
+
+            <!-- Statistics Counter -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl shadow-lg">
+                    <div class="stat-icon mb-4">
+                        <i class="fas fa-users text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="stat-number text-4xl font-bold text-blue-600 mb-2" data-count="500">0</h3>
+                    <p class="text-gray-700 font-medium">Happy Clients</p>
+                </div>
+                <div class="stat-item text-center p-6 bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl shadow-lg">
+                    <div class="stat-icon mb-4">
+                        <i class="fas fa-project-diagram text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="stat-number text-4xl font-bold text-green-600 mb-2" data-count="150">0</h3>
+                    <p class="text-gray-700 font-medium">Projects Completed</p>
+                </div>
+                <div class="stat-item text-center p-6 bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl shadow-lg">
+                    <div class="stat-icon mb-4">
+                        <i class="fas fa-trophy text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="stat-number text-4xl font-bold text-purple-600 mb-2" data-count="25">0</h3>
+                    <p class="text-gray-700 font-medium">Awards Won</p>
+                </div>
+                <div class="stat-item text-center p-6 bg-gradient-to-br from-orange-50 to-amber-100 rounded-xl shadow-lg">
+                    <div class="stat-icon mb-4">
+                        <i class="fas fa-clock text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="stat-number text-4xl font-bold text-orange-600 mb-2" data-count="5">0</h3>
+                    <p class="text-gray-700 font-medium">Years Experience</p>
+                </div>
+            </div>
+
+            <!-- Key Benefits with Icons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="benefit-icon mb-6">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-headset text-3xl text-blue-600"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">24/7 Support</h4>
+                    <p class="text-gray-600 leading-relaxed">Round-the-clock assistance from our dedicated support team. We're always here to help you succeed with expert guidance and quick solutions.</p>
+                </div>
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="benefit-icon mb-6">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-chart-line text-3xl text-green-600"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Proven Results</h4>
+                    <p class="text-gray-600 leading-relaxed">Data-driven strategies that deliver measurable growth. Our track record speaks for itself with consistent ROI improvements for our clients.</p>
+                </div>
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="benefit-icon mb-6">
+                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-user-tie text-3xl text-purple-600"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Expert Team</h4>
+                    <p class="text-gray-600 leading-relaxed">Work with certified professionals who stay ahead of industry trends. Our team brings years of experience and cutting-edge expertise to every project.</p>
+                </div>
+            </div>
+
+            <!-- Trust Badges and Certifications -->
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Trusted by Industry Leaders</h3>
+                <div class="trust-badges flex flex-wrap justify-center items-center gap-8">
+                    <div class="trust-badge bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center justify-center h-16">
+                            <i class="fas fa-certificate text-4xl text-blue-600"></i>
+                            <div class="ml-3 text-left">
+                                <p class="text-sm font-semibold text-gray-900">Google Certified</p>
+                                <p class="text-xs text-gray-600">Partner Agency</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-badge bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center justify-center h-16">
+                            <i class="fas fa-medal text-4xl text-yellow-600"></i>
+                            <div class="ml-3 text-left">
+                                <p class="text-sm font-semibold text-gray-900">ISO 9001</p>
+                                <p class="text-xs text-gray-600">Certified Quality</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-badge bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center justify-center h-16">
+                            <i class="fas fa-shield-alt text-4xl text-green-600"></i>
+                            <div class="ml-3 text-left">
+                                <p class="text-sm font-semibold text-gray-900">Security</p>
+                                <p class="text-xs text-gray-600">SSL Protected</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-badge bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <div class="flex items-center justify-center h-16">
+                            <i class="fas fa-star text-4xl text-orange-600"></i>
+                            <div class="ml-3 text-left">
+                                <p class="text-sm font-semibold text-gray-900">5-Star Rated</p>
+                                <p class="text-xs text-gray-600">Client Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bars - Expertise Levels -->
+            <div class="bg-gray-50 rounded-2xl p-8" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Our Expertise Levels</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="expertise-item">
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">SEO Optimization</span>
+                                <span class="text-sm font-medium text-blue-600">95%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="95" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">Content Marketing</span>
+                                <span class="text-sm font-medium text-green-600">90%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-green-500 to-green-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="90" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">PPC Advertising</span>
+                                <span class="text-sm font-medium text-purple-600">88%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-purple-500 to-purple-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="88" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">Social Media</span>
+                                <span class="text-sm font-medium text-pink-600">92%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-pink-500 to-pink-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="92" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">Analytics</span>
+                                <span class="text-sm font-medium text-indigo-600">94%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-indigo-500 to-indigo-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="94" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-900">Web Design</span>
+                                <span class="text-sm font-medium text-orange-600">87%</span>
+                            </div>
+                            <div class="progress-bar bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-fill bg-gradient-to-r from-orange-500 to-orange-600 h-full rounded-full transition-all duration-1000 ease-out" data-width="87" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+                <!-- SEO Optimization Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-search text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">SEO Optimization</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive keyword research, on-page optimization, and technical SEO to boost your search rankings.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Backlink Building Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-link text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Backlink Building</h3>
+                    <p class="text-gray-600 mb-4">High-quality link acquisition, competitor analysis, and white-hat techniques for lasting results.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Digital Marketing Strategy Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Digital Marketing Strategy</h3>
+                    <p class="text-gray-600 mb-4">Custom marketing plans with ROI focus and data-driven approach for optimal performance.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Content Marketing Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-edit text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Content Marketing</h3>
+                    <p class="text-gray-600 mb-4">Professional blog writing, content strategy development, and SEO-optimized content creation.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Social Media Management Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-share-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Social Media Management</h3>
+                    <p class="text-gray-600 mb-4">Complete platform management, engaging content creation, and community engagement strategies.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- PPC Advertising Card -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 text-center transition-transform duration-300 hover:transform hover:-translate-y-2">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-ad text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">PPC Advertising</h3>
+                    <p class="text-gray-600 mb-4">Expert Google Ads and Facebook Ads management with campaign optimization for maximum ROI.</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">Choose Your Plan</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Select the perfect plan for your business growth. All plans include expert support and proven strategies.
+                </p>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16" data-aos="fade-up" data-aos-delay="300">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="mb-8">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-rocket text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic Plan</h3>
+                        <p class="text-gray-600 mb-6">Perfect for small businesses getting started</p>
+                        <div class="price-display mb-6">
+                            <span class="text-5xl font-bold text-gray-900">$299</span>
+                            <span class="text-gray-600 text-lg">/month</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <div class="features-list text-left mb-8">
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Essential SEO optimization</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">10 high-quality backlinks</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Monthly performance reports</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Keyword research & analysis</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Basic technical SEO audit</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Email support</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#get-started" class="cta-btn w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Professional Plan (Most Popular) -->
+                <div class="pricing-card bg-white rounded-2xl shadow-xl border-2 border-blue-500 p-8 text-center relative transform scale-105 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <!-- Most Popular Badge -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                            <i class="fas fa-star mr-2"></i>Most Popular
+                        </span>
+                    </div>
+                    
+                    <div class="mb-8 mt-4">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-crown text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Professional Plan</h3>
+                        <p class="text-gray-600 mb-6">Ideal for growing businesses</p>
+                        <div class="price-display mb-6">
+                            <span class="text-5xl font-bold text-gray-900">$599</span>
+                            <span class="text-gray-600 text-lg">/month</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <div class="features-list text-left mb-8">
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Advanced SEO optimization</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">25 premium backlinks</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Bi-weekly detailed reports</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Content marketing strategy</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Competitor analysis</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Social media integration</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Priority phone & email support</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#get-started" class="cta-btn w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block shadow-lg">
+                        Start Professional Plan
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg border border-gray-200 p-8 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="mb-8">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-building text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise Plan</h3>
+                        <p class="text-gray-600 mb-6">Complete solution for large businesses</p>
+                        <div class="price-display mb-6">
+                            <span class="text-5xl font-bold text-gray-900">$999</span>
+                            <span class="text-gray-600 text-lg">+/month</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <div class="features-list text-left mb-8">
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Full-service SEO management</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Unlimited premium backlinks</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Weekly comprehensive reports</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Dedicated account manager</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Custom marketing strategy</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">Advanced analytics dashboard</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">24/7 priority support</span>
+                        </div>
+                        <div class="feature-item flex items-center mb-4">
+                            <i class="fas fa-check text-green-500 mr-3 text-lg"></i>
+                            <span class="text-gray-700">White-label reporting</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#get-started" class="cta-btn w-full bg-gray-900 hover:bg-black text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+
+            <!-- Feature Comparison Table -->
+            <div class="bg-gray-50 rounded-2xl p-8" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Detailed Feature Comparison</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-gray-200">
+                                <th class="text-left py-4 px-6 font-semibold text-gray-900">Features</th>
+                                <th class="text-center py-4 px-6 font-semibold text-gray-900">Basic</th>
+                                <th class="text-center py-4 px-6 font-semibold text-blue-600 bg-blue-50 rounded-t-lg">Professional</th>
+                                <th class="text-center py-4 px-6 font-semibold text-gray-900">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Monthly Price</td>
+                                <td class="py-4 px-6 text-center font-semibold">$299</td>
+                                <td class="py-4 px-6 text-center font-semibold bg-blue-50">$599</td>
+                                <td class="py-4 px-6 text-center font-semibold">$999+</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">SEO Optimization</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-500"></i></td>
+                                <td class="py-4 px-6 text-center bg-blue-50"><i class="fas fa-check text-green-500"></i></td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Backlinks</td>
+                                <td class="py-4 px-6 text-center">10</td>
+                                <td class="py-4 px-6 text-center bg-blue-50">25</td>
+                                <td class="py-4 px-6 text-center">Unlimited</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Reporting Frequency</td>
+                                <td class="py-4 px-6 text-center">Monthly</td>
+                                <td class="py-4 px-6 text-center bg-blue-50">Bi-weekly</td>
+                                <td class="py-4 px-6 text-center">Weekly</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Content Marketing</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-500"></i></td>
+                                <td class="py-4 px-6 text-center bg-blue-50"><i class="fas fa-check text-green-500"></i></td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Dedicated Manager</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-500"></i></td>
+                                <td class="py-4 px-6 text-center bg-blue-50"><i class="fas fa-times text-red-500"></i></td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="py-4 px-6 text-gray-700">Custom Strategy</td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-times text-red-500"></i></td>
+                                <td class="py-4 px-6 text-center bg-blue-50"><i class="fas fa-times text-red-500"></i></td>
+                                <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 text-gray-700">Support Level</td>
+                                <td class="py-4 px-6 text-center text-sm">Email</td>
+                                <td class="py-4 px-6 text-center text-sm bg-blue-50">Phone & Email</td>
+                                <td class="py-4 px-6 text-center text-sm">24/7 Priority</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Money Back Guarantee -->
+            <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="500">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                    <i class="fas fa-shield-alt text-2xl text-green-600"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">30-Day Money-Back Guarantee</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Try our services risk-free. If you're not completely satisfied with the results within the first 30 days, we'll refund your investment completely.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Don't just take our word for it. Here's what our satisfied clients have to say about our services.
+                </p>
+            </div>
+
+            <!-- Testimonial Carousel -->
+            <div class="relative max-w-4xl mx-auto">
+                <div class="testimonial-carousel overflow-hidden bg-gray-50 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item">
+                        <div class="text-center p-12">
+                            <div class="mb-6">
+                                <i class="fas fa-quote-left text-4xl text-blue-500 opacity-50"></i>
+                            </div>
+                            <p class="text-2xl text-gray-700 mb-8 leading-relaxed font-medium">
+                                "Working with this team has transformed our online presence completely. Our website traffic increased by 300% within just 3 months!"
+                            </p>
+                            <div class="flex justify-center mb-6">
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="text-center">
+                                    <p class="text-lg font-semibold text-gray-900">Sarah Johnson</p>
+                                    <p class="text-gray-600">CEO, TechStart Inc.</p>
+                                    <div class="mt-4">
+                                        <img src="https://via.placeholder.com/60x30/4F46E5/FFFFFF?text=TECH" alt="TechStart Inc. Logo" class="mx-auto rounded border border-gray-200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                        <div class="text-center p-12">
+                            <div class="mb-6">
+                                <i class="fas fa-quote-left text-4xl text-blue-500 opacity-50"></i>
+                            </div>
+                            <p class="text-2xl text-gray-700 mb-8 leading-relaxed font-medium">
+                                "The ROI from their digital marketing strategies exceeded all our expectations. Professional, reliable, and results-driven!"
+                            </p>
+                            <div class="flex justify-center mb-6">
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="text-center">
+                                    <p class="text-lg font-semibold text-gray-900">Michael Chen</p>
+                                    <p class="text-gray-600">Marketing Director, GrowthCorp</p>
+                                    <div class="mt-4">
+                                        <img src="https://via.placeholder.com/60x30/059669/FFFFFF?text=GROW" alt="GrowthCorp Logo" class="mx-auto rounded border border-gray-200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <div class="text-center p-12">
+                            <div class="mb-6">
+                                <i class="fas fa-quote-left text-4xl text-blue-500 opacity-50"></i>
+                            </div>
+                            <p class="text-2xl text-gray-700 mb-8 leading-relaxed font-medium">
+                                "Outstanding service and incredible attention to detail. They helped us rank #1 for our most important keywords!"
+                            </p>
+                            <div class="flex justify-center mb-6">
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star text-yellow-500 text-xl"></i>
+                                <i class="fas fa-star-half-alt text-yellow-500 text-xl"></i>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="text-center">
+                                    <p class="text-lg font-semibold text-gray-900">Emily Rodriguez</p>
+                                    <p class="text-gray-600">Founder, Digital Solutions Pro</p>
+                                    <div class="mt-4">
+                                        <img src="https://via.placeholder.com/60x30/DC2626/FFFFFF?text=DSP" alt="Digital Solutions Pro Logo" class="mx-auto rounded border border-gray-200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-8 space-x-3">
+                    <button class="dot w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 hover:bg-blue-500 focus:outline-none focus:bg-blue-500" aria-label="Testimonial 1"></button>
+                    <button class="dot w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 hover:bg-blue-500 focus:outline-none focus:bg-blue-500" aria-label="Testimonial 2"></button>
+                    <button class="dot w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 hover:bg-blue-500 focus:outline-none focus:bg-blue-500" aria-label="Testimonial 3"></button>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="testimonial-prev absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left text-gray-700"></i>
+                </button>
+                <button class="testimonial-next absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Team</h2>
+            <p class="text-center text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="200">Meet our professional team committed to enhancing your digital experience.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="400">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">John Doe</h3>
+                        <p class="text-gray-600 mb-4">CEO</p>
+                        <p class="text-gray-500 mb-4">Experienced leader in digital strategies and marketing innovation.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">Jane Smith</h3>
+                        <p class="text-gray-600 mb-4">SEO Specialist</p>
+                        <p class="text-gray-500 mb-4">Driving search visibility through effective SEO methodologies.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">Emily Turner</h3>
+                        <p class="text-gray-600 mb-4">Content Manager</p>
+                        <p class="text-gray-500 mb-4">Crafting compelling content that resonates and engages audiences.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">Michael Chen</h3>
+                        <p class="text-gray-600 mb-4">Analytics Specialist</p>
+                        <p class="text-gray-500 mb-4">Transforming data into actionable insights for strategic decisions.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">Sarah Williams</h3>
+                        <p class="text-gray-600 mb-4">Social Media Manager</p>
+                        <p class="text-gray-500 mb-4">Building communities and amplifying brand presence across platforms.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="team-card bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 hover:-translate-y-2">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="rounded-full w-32 h-32 mx-auto object-cover hover:opacity-90">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h3 class="text-xl font-bold">David Rodriguez</h3>
+                        <p class="text-gray-600 mb-4">PPC Campaign Manager</p>
+                        <p class="text-gray-500 mb-4">Optimizing ad campaigns for maximum ROI and conversion rates.</p>
+                        <div class="social-icons space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Contact Us</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <form id="contactForm" class="bg-white p-8 rounded-lg shadow-lg" novalidate>
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 block w-full border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 block w-full border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 p-2 block w-full border rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label for="service" class="block text-sm font-medium text-gray-700">Service</label>
+                    <select id="service" name="service" class="mt-1 p-2 block w-full border rounded-md">
+                        <option value="seo">SEO</option>
+                        <option value="ppc">PPC</option>
+                        <option value="smm">SMM</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 p-2 block w-full border rounded-md" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn bg-blue-600 text-white px-4 py-2 rounded-lg">Send Message</button>
+                <p id="formResponse" class="mt-4 text-center"></p>
+            </form>
+
+            <!-- Contact Information -->
+            <div class="flex flex-col justify-center items-start">
+                <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                <p class="mb-2"><strong>Email:</strong> contact@example.com</p>
+                <p class="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p class="mb-4"><strong>Address:</strong> 123 Business St, City, Country</p>
+                <h4 class="text-lg font-bold mb-2">Find us on Social Media</h4>
+                <div class="social-icons space-x-4">
+                    <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- Google Maps Placeholder -->
+                <div class="mt-8 w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+                    Google Maps Placeholder
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Get Started Today</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="200">Ready to begin your journey with us?</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Description & Logo -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-rocket mr-2 text-blue-400 text-2xl"></i>
+                        <span class="text-xl font-bold">YourLogo</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        We provide expert digital marketing solutions to enhance your online presence and drive sustainable growth for your business.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-400 transition-colors duration-200">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600 transition-colors duration-200">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-red-500 transition-colors duration-200">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>Home</a></li>
+                        <li><a href="#features" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>About Us</a></li>
+                        <li><a href="#team" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>Our Team</a></li>
+                        <li><a href="#pricing" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>Pricing</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-blue-400"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-search text-xs mr-2 text-blue-400"></i>SEO Optimization</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-link text-xs mr-2 text-blue-400"></i>Backlink Building</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-edit text-xs mr-2 text-blue-400"></i>Content Marketing</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-share-alt text-xs mr-2 text-blue-400"></i>Social Media Management</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-ad text-xs mr-2 text-blue-400"></i>PPC Advertising</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center"><i class="fas fa-bullseye text-xs mr-2 text-blue-400"></i>Digital Strategy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                    <p class="text-gray-300 mb-4">Subscribe to our newsletter for the latest updates and marketing tips.</p>
+                    <form id="newsletterForm" class="mb-6">
+                        <div class="flex flex-col space-y-3">
+                            <input 
+                                type="email" 
+                                id="newsletterEmail"
+                                placeholder="Enter your email" 
+                                class="px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-400 focus:outline-none transition-all duration-200"
+                                required
+                            />
+                            <button 
+                                type="submit" 
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 flex items-center justify-center"
+                            >
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                    <p class="text-xs text-gray-400">
+                        <i class="fas fa-lock mr-1"></i>
+                        We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 pt-8">
+                <!-- Copyright and Legal Links -->
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400">
+                            &copy; <span id="currentYear"></span> YourLogo. All rights reserved.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                            Crafted with <i class="fas fa-heart text-red-500 mx-1"></i> by our team
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-end items-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Cookie Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate On Scroll) JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Update copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Newsletter form handler
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value;
+            
+            // Simple email validation
+            if (email && email.includes('@')) {
+                // Here you would typically send the email to your server
+                alert('Thank you for subscribing! We\'ll keep you updated with our latest news.');
+                document.getElementById('newsletterEmail').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    </script>
+</body>
+</html>

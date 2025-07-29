@@ -450,10 +450,9 @@ function initPremiumInteractions() {
     const premiumStatObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const statNumber = entry.target.querySelector('.stat-number');
+                const statNumber = entry.target.querySelector('div:first-child');
                 if (statNumber) {
-                    const target = parseInt(statNumber.getAttribute('data-count') || statNumber.textContent.replace(/\D/g, ''));
-                    animatePremiumNumber(statNumber, target, 2500);
+                    animatePremiumNumber(statNumber, parseInt(statNumber.textContent.replace(/\D/g, '')), 2500);
                 }
             }
         });

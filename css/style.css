@@ -581,68 +581,17 @@ body {
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-xl);
   transition: all var(--transition-normal);
-  padding: var(--space-2xl);
+  padding: var(--space-xl);
   text-align: center;
   box-shadow: var(--shadow-soft);
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-#features .stat-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-  transition: left var(--transition-slow);
-  z-index: 1;
-}
-
-#features .stat-item:hover::before {
-  left: 100%;
 }
 
 #features .stat-item:hover {
-  transform: translateY(-8px) scale(1.05);
+  transform: translateY(-6px) scale(1.03);
   box-shadow: var(--shadow-ultra);
   border-color: rgba(102, 126, 234, 0.3);
-}
-
-#features .stat-item .stat-icon {
-  margin-bottom: var(--space-lg);
-  position: relative;
-  z-index: 2;
-}
-
-#features .stat-item .stat-number {
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1;
-  margin-bottom: var(--space-md);
-  position: relative;
-  z-index: 2;
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-#features .stat-item p {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  position: relative;
-  z-index: 2;
-  margin: 0;
 }
 
 #features .benefit-card {
@@ -1059,30 +1008,6 @@ footer .relative {
   
   .service-card p {
     font-size: 0.9rem;
-  }
-  
-  /* Premium Stats Responsive Design */
-  #features .stat-item {
-    min-height: 160px;
-    padding: var(--space-lg);
-    margin-bottom: var(--space-lg);
-  }
-  
-  #features .stat-item .stat-number {
-    font-size: 2.5rem;
-    margin-bottom: var(--space-sm);
-  }
-  
-  #features .stat-item p {
-    font-size: 1rem;
-  }
-  
-  #features .stat-item .stat-icon {
-    margin-bottom: var(--space-md);
-  }
-  
-  #features .stat-item .stat-icon i {
-    font-size: 2rem;
   }
   
   .team-card {
